@@ -54,3 +54,35 @@ Lógica de como os dados são processados no Datapipeline
 
 More infos: 
 https://airflow.apache.org/docs/apache-airflow/2.3.2/
+
+
+---
+
+# Arquitetura do AirFlow
+
+## Web Server 
+
+O web server é um servidor feito em Flask, um framework web Pyhton, que serve para nos apresentar a interface de usuário do Airflow, portanto, é por meio dele que acessamos esta interface.
+
+## Scheduler -- Agendador
+
+O scheduler ("agendador" em português) é responsável pelo agendamento da execução das tarefas dos DAGs, então ele determina quais tarefas serão realizadas, onde serão executadas e em qual ordem isso acontecerá.
+
+## Banco de Dados
+
+O banco de dados, por sua vez, serve para armazenar todos os metadados referentes aos DAGs. Sendo assim, ele registra o horário em que as tarefas foram executadas, quanto tempo cada task levou para ser realizada e o estado de cada uma - se foram executadas com sucesso ou falha, e outras informações relacionadas.
+
+## Executor
+
+Por fim, temos o executor, que é o mecanismo de execução das tarefas. Ou seja, ele é responsável por descobrir quais recursos serão necessários para executar essas tasks.
+
+
+# Como trabahão juntos?? 
+
+       --> Web Server ------------
+      |                          |
+User -> Pasta de DAGs ---> Banco de Dados -->Executor
+               |                 |
+            Scheduler  ----------
+
+
