@@ -52,3 +52,5 @@ Lógica de como os dados são processados no Datapipeline
 
 - Operator: encapsula a lógica para fazer uma unidade de trabalho (task).
 
+More infos: 
+https://airflow.apache.org/docs/apache-airflow/2.3.2/
