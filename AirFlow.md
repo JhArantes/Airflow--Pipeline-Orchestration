@@ -19,7 +19,7 @@
 
  # Principais Conceitos da Ferramenta
 
- ## DAG - 
+ ## DAG - Directed Acyclic Graph
 
 Um DAG é basicamente um fluxo de trabalho, um pipeline de dados definido em Python que trata-se de um conjunto de instruções que precisam ser executadas em uma determinada ordem. Ao definirmos um data pipeline no Airflow, este passa a ser um DAG.
 
@@ -60,6 +60,8 @@ https://airflow.apache.org/docs/apache-airflow/2.3.2/
 
 # Arquitetura do AirFlow
 
+![Airflow-Architecture](./IMGs/Airflow/Airflow-Architecture.png)
+
 ## Web Server 
 
 O web server é um servidor feito em Flask, um framework web Pyhton, que serve para nos apresentar a interface de usuário do Airflow, portanto, é por meio dele que acessamos esta interface.
@@ -84,5 +86,5 @@ Por fim, temos o executor, que é o mecanismo de execução das tarefas. Ou seja
 User -> Pasta de DAGs ---> Banco de Dados -->Executor
                |                 |
             Scheduler  ----------
-
-
+More infos about Airflow Architecture
+https://airflow.apache.org/docs/apache-airflow/2.3.2/concepts/overview.html
