@@ -40,3 +40,6 @@ Todo operador no Airflow deve seguir três princípios fundamentais:
 ## 📌 Conclusão
 
 Operadores são **blocos fundamentais** no Airflow, tornando-o uma ferramenta poderosa para orquestração de dados. Com eles, é possível realizar tarefas complexas com **menos código** e maior **clareza na manutenção** dos fluxos de trabalho.
+
+Mais sobre
+https://airflow.apache.org/docs/apache-airflow/2.3.2/concepts/operators.html
