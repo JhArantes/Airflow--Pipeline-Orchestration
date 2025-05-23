@@ -43,3 +43,19 @@ Operadores são **blocos fundamentais** no Airflow, tornando-o uma ferramenta po
 
 Mais sobre
 https://airflow.apache.org/docs/apache-airflow/2.3.2/concepts/operators.html
+
+
+
+---
+
+## Variaveis Dinamicas
+
+O Airflow utiliza o Jinja, uma estrutura de modelagem em Python, como seu mecanismo de modelagem. Vamos conhecer mais algumas variáveis que podemos utilizar em tempo de execução:
+
+data_interval_start: data do início do intervalo de dados;
+data_interval_end: data do fim do intervalo de dados;
+ds: data lógica de execução do DAG;
+ds_nodash: data lógica de execução do DAG sem nenhuma separação por traços.
+O Airflow inclui muitas outras variáveis ​​que podem ser usadas para modelagem. Caso queira conhecê-las, consulte a documentação:
+
+https://airflow.apache.org/docs/apache-airflow/2.3.2/templates-ref.html
