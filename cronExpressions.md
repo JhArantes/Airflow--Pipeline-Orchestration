@@ -18,5 +18,6 @@ No caso do nosso DAG, queremos que ele seja executado toda segunda-feira do mês
 ```python
 schedule_interval = 0 0 * * 1
 ```
+
 More Infos:
 https://en.wikipedia.org/wiki/Cron#CRON_expression

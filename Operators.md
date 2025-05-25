@@ -1,8 +1,14 @@
 # ✈️ Operadores no Apache Airflow
 
+Os operators são os blocos de construção de um DAG. Eles contém a lógica de como os dados são processados em um pipeline e cada uma das tarefas em um DAG é definida pela instanciação de um operador.
+
+O PythonOperator é um operador utilizado para executar funções Python. Quando instanciamos uma tarefa utilizando esse operador, precisamos passar informações para alguns parâmetros específicos que definem seu funcionamento.
+
 Os **operadores** são **classes do Python** que encapsulam a lógica necessária para executar **uma unidade de trabalho (tarefa)**. Eles definem as **ações a serem realizadas** por uma tarefa, abstraindo grande parte do código que seria necessário escrever manualmente.
 
 Ao instanciar um operador com os parâmetros apropriados, essa instância **se torna uma tarefa executável** dentro de um DAG (Directed Acyclic Graph).
+
+
 
 ---
 
